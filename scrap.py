@@ -7,7 +7,7 @@ if __name__=='__main__':
     url="https://www.theverge.com/"
     # scrap the website
     data=Scrapper(url)
-    
+    print(data)
     # save the data in csv file 
     saveCsv(data)
     
