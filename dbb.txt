@@ -1,5 +1,0 @@
-DB instance identifier : database-1
-username : admin
-pass : shrey2502
-host:database-1.cwfontt3bgap.us-east-1.rds.amazonaws.com
-port : 3306
