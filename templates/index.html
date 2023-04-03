@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WEB SCRAPER</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css')}}"
+    />
+  </head>
+  <body>
+    <h1> CSV file of the article on verge.com</h1>
+    <div class="col">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Heading</th>
+                <th>URL</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+        {% for index in verge.index %}
+        <tr>
+            <th>{{verge['id'][index]}}</th>
+            <th>{{verge['Heading'][index]}}</th>
+            <th><a href="{{verge['URL'][index]}}">{{verge['URL'][index]}}<a></th>
+            <th>{{verge['Author'][index]}}</th>
+            <th>{{verge['Date'][index]}}</th>
+        </tr>
+        {% endfor %}
+
+        </table>
+    
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

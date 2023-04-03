@@ -7,7 +7,7 @@ def saveCsv(data):
     for i,d in enumerate(data):
         dict['id'].append(i+1)
         dict['Heading'].append(d[0])
-        dict['URL'].append(d[1])
+        dict['URL'].append('https://www.theverge.com/'+str(d[1]))
         dict['Author'].append(d[2])
         dict['Date'].append(d[3])
     df=pd.DataFrame(dict)
