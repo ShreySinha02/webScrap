@@ -1,4 +1,5 @@
 import sqlite3
+# storing to sqlite
 def sqlCon(data):
     
     ''' connecting to the sqlite'''
